@@ -113,22 +113,44 @@ const Intro = () => {
 
 const RingCeremony = () => {
   return (
-    <section className="py-20 bg-red-100 min-h-screen">
-      <h2 className="text-3xl font-bold text-center">Ring Ceremony</h2>
+    <section className=" bg-[#fed4ff] min-h-screen relative">
+      <div className="absolute top-[0%] flex items-center justify-center">
+        <img
+          src="/H2.png"
+          alt="torn"
+          className="self-center object-contain z-[5]"
+        />
+      </div>
+      <div className="absolute bottom-[0%] flex items-center justify-center">
+        <img
+          src="/RCC.png"
+          alt="torn"
+          className="self-center object-contain z-[5]"
+        />
+      </div>
+      <div className="absolute bottom-[0%] flex items-center justify-center">
+        <img
+          src="/F2.gif"
+          alt="torn"
+          className="self-center object-contain z-[5]"
+        />
+      </div>
+      {/* <h2 className="text-3xl font-bold text-center">Ring Ceremony</h2>
       <p className="mt-4 text-center">
         Join us for the ring ceremony where we exchange our vows of love.
-      </p>
+      </p> */}
     </section>
   );
 };
 
 const Haldi = () => {
   return (
-    <section className="py-20 min-h-screen">
-      <h2 className="text-3xl font-bold text-center">Haldi Ceremony</h2>
+    <section className="py-20 min-h-screen relative">
+
+      {/* <h2 className="text-3xl font-bold text-center">Haldi Ceremony</h2>
       <p className="mt-4 text-center">
         Celebrate the Haldi ceremony filled with joy and laughter!
-      </p>
+      </p> */}
     </section>
   );
 };
