@@ -8,6 +8,7 @@ function App() {
       <RingCeremony />
       <Haldi />
       <Marriage />
+      <Last />
     </div>
   );
 }
@@ -33,21 +34,39 @@ const Intro = () => {
   }, []);
 
   return (
-    <section className="relative text-center min-h-screen">
+    <section className="relative text-center min-h-screen bg-[#ffe4cb]">
       <div>
         {/* <img src="/toran.gif" alt="torn" className='border border-black h-[10%] object-cover'/> */}
-        <img
-          src="/bg1n.gif"
-          alt="torn"
-          className="min-h-screen object-cover"
-        />
+        <img src="/bg1n.gif" alt="torn" className="min-h-screen object-cover" />
       </div>
 
       <div className="absolute top-[3%] flex items-center justify-center w-full">
+        {/* <img
+          src="/bappa.gif"
+          alt="torn"
+          className="self-center w-[35%] object-contain z-[5]"
+        /> */}
+        <p className="text-red-900 font-bold">ॐ गं गणपतये नमः</p>
+      </div>
+      <div className="absolute top-[19%] flex items-center justify-center w-full">
         <img
           src="/bappa.gif"
           alt="torn"
-          className="self-center w-[24%] object-contain z-[5]"
+          className="self-center w-[35%] object-contain z-[5]"
+        />
+      </div>
+      <div className="absolute top-[7%] flex items-center justify-center w-full">
+        <img
+          src="/chakra.gif"
+          alt="torn"
+          className="self-center w-[75%] object-contain z-[4]"
+        />
+      </div>
+      <div className="absolute top-[50%] flex items-center justify-center w-full">
+        <img
+          src="/hands.png"
+          alt="torn"
+          className="self-center w-[12%] object-contain z-[4]"
         />
       </div>
       <div className="absolute top-[34%] flex items-center w-full justify-between ">
@@ -146,7 +165,22 @@ const RingCeremony = () => {
 const Haldi = () => {
   return (
     <section className="py-20 min-h-screen relative">
+      <div className="absolute top-[0%] flex items-center justify-center">
+        <img
+          src="/H3.gif"
+          alt="torn"
+          className="self-center object-contain z-[5]"
+        />
+      </div>
 
+      <div className="absolute bottom-[0%] flex items-center justify-center">
+        <img
+          // src="/F3.png"
+          src="/temphaldi.png"
+          alt="torn"
+          className="self-center object-contain z-[5]"
+        />
+      </div>
       {/* <h2 className="text-3xl font-bold text-center">Haldi Ceremony</h2>
       <p className="mt-4 text-center">
         Celebrate the Haldi ceremony filled with joy and laughter!
@@ -157,11 +191,82 @@ const Haldi = () => {
 
 const Marriage = () => {
   return (
-    <section className="py-20 bg-green-100 min-h-screen">
-      <h2 className="text-3xl font-bold text-center">Marriage Ceremony</h2>
+    <section className=" bg-[#a60046] min-h-screen relative">
+      <div className="absolute bottom-[0%] flex items-center justify-center px-10 pb-10">
+        <img
+          src="/M4.png"
+          alt="torn"
+          className="self-center object-contain z-[5] "
+        />
+      </div>
+      <div className="absolute bottom-[0%] flex items-center justify-center">
+        <img
+          src="/5couple.png"
+          alt="torn"
+          className="self-center object-contain z-[5] "
+        />
+      </div>
+      {/* <h2 className="text-3xl font-bold text-center">Marriage Ceremony</h2>
       <p className="mt-4 text-center">
         Join us as we tie the knot and celebrate our love.
-      </p>
+      </p> */}
+    </section>
+  );
+};
+
+const Last = () => {
+  return (
+    <section className=" bg-[#152647] min-h-screen relative">
+      <div className="absolute top-[0%] flex items-center w-full justify-center">
+        {/* <div className="flex justify-between items-center w-full z-20">
+          <img
+            src="/sparkles.gif"
+            alt="torn"
+            className="self-center w-10 object-contain "
+          />
+          <img
+            src="/sparkles.gif"
+            alt="torn"
+            className="self-center w-10 object-contain "
+          />
+          <img
+            src="/sparkles.gif"
+            alt="torn"
+            className="self-center w-10 object-contain"
+          />
+        </div> */}
+        <img
+          src="/H5.png"
+          alt="torn"
+          className="self-center object-contain z-10"
+        />
+      </div>
+
+      <div className="absolute top-[0%] flex items-center justify-center">
+        <img
+          src="/goldSpark.gif"
+          alt="torn"
+          className="self-center object-contain z-[5]"
+        />
+      </div>
+      <div className="absolute bottom-[0%] flex items-center justify-center">
+        <img
+          src="/F5.png"
+          alt="torn"
+          className="self-center object-contain z-[5]"
+        />
+      </div>
+      {/* <div className="absolute bottom-[0%] flex items-center justify-center px-10 pb-10">
+        <img
+          src="/M4.png"
+          alt="torn"
+          className="self-center object-contain z-[5] "
+        />
+      </div> */}
+      {/* <h2 className="text-3xl font-bold text-center">Marriage Ceremony</h2>
+      <p className="mt-4 text-center">
+        Join us as we tie the knot and celebrate our love.
+      </p> */}
     </section>
   );
 };
