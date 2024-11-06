@@ -36,7 +36,7 @@ const Intro = () => {
 
   return (
     <section className="relative text-center min-h-screen bg-[#ffe4cb] overflow-hidden">
-      <div className="flex justify-between relative z-20 h-[10%] w-[100%] border border-black min-h-screen">
+      <div className="flex justify-between relative z-20 h-[10%] w-[100%] min-h-screen">
         {/* <img src="/toran.gif" alt="torn" className='border border-black h-[10%] object-cover'/> */}
         {/* <img src="/bg1n.gif" alt="torn" className="min-h-screen object-cover" /> */}
         {/* <img
