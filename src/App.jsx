@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { gsap } from "gsap";
+import { Link, Navigate } from "react-router-dom";
 
 function App() {
   return (
@@ -34,10 +35,39 @@ const Intro = () => {
   }, []);
 
   return (
-    <section className="relative text-center min-h-screen bg-[#ffe4cb]">
-      <div>
+    <section className="relative text-center min-h-screen bg-[#ffe4cb] overflow-hidden">
+      <div className="flex justify-between relative z-20 h-[10%] w-[100%] border border-black min-h-screen">
         {/* <img src="/toran.gif" alt="torn" className='border border-black h-[10%] object-cover'/> */}
-        <img src="/bg1n.gif" alt="torn" className="min-h-screen object-cover" />
+        {/* <img src="/bg1n.gif" alt="torn" className="min-h-screen object-cover" /> */}
+        {/* <img
+          src="/flower.gif"
+          alt="torn"
+          className="w-[20%] object-cover absolute -top-20 -left-20"
+        />
+        <img
+          src="/flower.gif"
+          alt="torn"
+          className="w-[20%] object-cover absolute -top-20 -right-20"
+        /> */}
+      </div>
+      <div className="absolute top-[0%] flex items-center justify-center w-full">
+        <img
+          src="/headSparkal.gif"
+          alt="headSparkal"
+          className="self-center object-contain z-[22]"
+        />
+      </div>
+      <div className="absolute top-[-12%] flex items-center w-full justify-between ">
+        <img
+          src="/flower.gif"
+          alt="torn"
+          className="self-center h-[300px]  object-contain z-[5] -ml-[99px]"
+        />
+        <img
+          src="/flower.gif"
+          alt="torn"
+          className="self-center  h-[300px] object-contain z-[5] -mr-[99px]"
+        />
       </div>
 
       <div className="absolute top-[3%] flex items-center justify-center w-full">
@@ -140,11 +170,32 @@ const RingCeremony = () => {
           className="self-center object-contain z-[5]"
         />
       </div>
+      <div className="absolute top-[2%] flex items-center justify-center w-full">
+        <img
+          src="/bappa.gif"
+          alt="torn"
+          className="self-center w-[18%] object-contain z-[5]"
+        />
+      </div>
+      <div className="absolute top-[13%] flex items-center justify-center w-full">
+        <img
+          src="/ringTitle.png"
+          alt="torn"
+          className="self-center w-[78%] object-contain z-[5] ml-2"
+        />
+      </div>
+      <div className="absolute top-[36%] flex items-center justify-center w-full">
+        <img
+          src="/ringText.png"
+          alt="torn"
+          className="self-center w-[65%] object-contain z-[5] mr-2"
+        />
+      </div>
       <div className="absolute bottom-[0%] flex items-center justify-center">
         <img
           src="/RCC.png"
           alt="torn"
-          className="self-center object-contain z-[5]"
+          className="self-center w-[90%] object-contain z-[5]"
         />
       </div>
       <div className="absolute bottom-[0%] flex items-center justify-center">
@@ -172,11 +223,31 @@ const Haldi = () => {
           className="self-center object-contain z-[5]"
         />
       </div>
-
+      <div className="absolute top-[2%] flex items-center justify-center w-full">
+        <img
+          src="/bappa.gif"
+          alt="torn"
+          className="self-center w-[18%] object-contain z-[5]"
+        />
+      </div>
+      <div className="absolute top-[17%] flex items-center justify-center w-full">
+        <img
+          src="/haldiTitle.png"
+          alt="torn"
+          className="self-center w-[65%] object-contain z-[5]"
+        />
+      </div>
+      <div className="absolute bottom-[24%] flex items-center justify-center w-full">
+        <img
+          src="/haldiDate.png"
+          alt="torn"
+          className="self-center w-[85%] object-contain z-[5]"
+        />
+      </div>
       <div className="absolute bottom-[0%] flex items-center justify-center">
         <img
           // src="/F3.png"
-          src="/temphaldi.png"
+          src="/F3s.png"
           alt="torn"
           className="self-center object-contain z-[5]"
         />
@@ -192,11 +263,58 @@ const Haldi = () => {
 const Marriage = () => {
   return (
     <section className=" bg-[#a60046] min-h-screen relative">
-      <div className="absolute bottom-[0%] flex items-center justify-center px-10 pb-10">
+      <div className="absolute top-[6%] flex items-center justify-center px-10 pb-10">
         <img
           src="/M4.png"
           alt="torn"
           className="self-center object-contain z-[5] "
+        />
+      </div>
+      <div className="absolute bottom-[0%] flex items-center w-full justify-center px-10 pb-6">
+        <div
+          className="self-center w-full bg-[#880039] h-[50vh] object-contain z-[5]"
+        />
+      </div>
+      <div className="absolute top-[1%] flex items-center justify-center p-1">
+        <img
+          src="/H4a.png"
+          alt="torn"
+          className="self-center object-contain z-[5] opacity-90"
+        />
+      </div>
+      <div className="absolute top-[2%] flex items-center justify-center w-full">
+        <img
+          src="/bappa.gif"
+          alt="torn"
+          className="self-center w-[18%] object-contain z-[5]"
+        />
+      </div>
+      <div className="absolute top-[14%] flex items-center justify-center w-full">
+        <img
+          src="/123.png"
+          alt="torn"
+          className="self-center w-[60%] object-contain z-[5]"
+        />
+      </div>
+      <div className="absolute top-[25%] flex items-center justify-center w-full">
+        <img
+          src="/webTitle.png"
+          alt="torn"
+          className="self-center w-[74%] object-contain z-[5]"
+        />
+      </div>
+      <div className="absolute top-[40%] flex items-center justify-center w-full">
+        <img
+          src="/wedText.png"
+          alt="torn"
+          className="self-center w-[85%] object-contain z-[50]"
+        />
+      </div>
+      <div className="absolute top-[33%] flex items-center justify-center w-full">
+        <img
+          src="/chakraWed.png"
+          alt="torn"
+          className="self-center w-[75%] object-contain z-[5] opacity-20"
         />
       </div>
       <div className="absolute bottom-[0%] flex items-center justify-center">
@@ -247,6 +365,20 @@ const Last = () => {
           src="/goldSpark.gif"
           alt="torn"
           className="self-center object-contain z-[5]"
+        />
+      </div>
+      <div className="absolute top-[20%] flex items-center justify-center w-full">
+        <img
+          src="/LastText.png"
+          alt="torn"
+          className="self-center w-[100%] object-contain z-[5]"
+        />
+      </div>
+      <div className="absolute bottom-[20%] flex items-center justify-center w-full">
+        <img
+          src="/LastText2.png"
+          alt="torn"
+          className="self-center w-[70%] object-contain z-[5]"
         />
       </div>
       <div className="absolute bottom-[0%] flex items-center justify-center">
