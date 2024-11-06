@@ -237,7 +237,7 @@ const Haldi = () => {
           className="self-center w-[65%] object-contain z-[5]"
         />
       </div>
-      <div className="absolute bottom-[24%] flex items-center justify-center w-full">
+      <div className="absolute bottom-[28%] flex items-center justify-center w-full">
         <img
           src="/haldiDate.png"
           alt="torn"
